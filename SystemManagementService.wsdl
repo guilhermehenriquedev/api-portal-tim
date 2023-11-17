@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<definitions
+	name="SystemManagement"
+	targetNamespace="http://xml.avaya.com/ws/SystemManagementService/2008/07/01" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:tns="http://xml.avaya.com/ws/SystemManagementService/2008/07/01" 
+	xmlns:tns3="http://xml.avaya.com/ws/session" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://schemas.xmlsoap.org/wsdl/">
+	
+	<wsdl:types xmlns="http://schemas.xmlsoap.org/wsdl/">
+		<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sms="http://xml.avaya.com/sms" targetNamespace="http://xml.avaya.com/ws/SystemManagementService/2008/07/01">
+			<import namespace="http://xml.avaya.com/sms" schemaLocation="http://10.96.231.77/smsxml/xsd/models/ModelChoices.xsd"/>
+			<element name="submitRequest" type="tns:submitRequestType"/>
+			<complexType name="submitRequestType">
+				<sequence>
+					<element name="modelFields" type="sms:modelChoices"/>
+					<element name="operation" type="xsd:string"/>
+					<element name="objectname" type="xsd:string"/>
+					<element name="qualifier" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<element name="submitRequestResponse" type="tns:returnType"/>
+			<complexType name="returnType">
+				<sequence>
+					<element name="return" type="tns:Result"/>
+				</sequence>
+			</complexType>
+			<complexType name="Result">
+				<all>
+					<element name="result_code" type="xsd:int"/>
+					<element name="result_data" type="sms:modelChoices"/>
+					<element name="message_text" type="xsd:string"/>
+				</all>
+			</complexType>
+			<element name="release" type="xsd:string" nillable="true"/>
+			<element name="releaseResponse" type="tns:returnType"/>
+		</schema>
+		<schema targetNamespace="http://xml.avaya.com/ws/session" xmlns="http://www.w3.org/2001/XMLSchema">
+			<xsd:element name="sessionID" type="xsd:string"/>
+		</schema>
+	</wsdl:types>
+	<message name="SessionID">
+		<part name="sessionID" element="tns3:sessionID"/>
+	</message>
+	<message name="submitRequestRequest">
+		<part name="body" element="tns:submitRequest"/>
+	</message>
+	<message name="submitRequestResponse">
+		<part name="return" element="tns:submitRequestResponse"/>
+	</message>
+	<message name="releaseRequest">
+		<part name="body" element="tns:release"/>
+	</message>
+	<message name="releaseResponse">
+		<part name="return" element="tns:releaseResponse"/>
+	</message>
+	<portType name="SystemManagementPort">
+		<operation name="submitRequest">
+			<input message="tns:submitRequestRequest"/>
+			<output message="tns:submitRequestResponse"/>
+		</operation>
+		<operation name="release">
+			<input message="tns:releaseRequest"/>
+			<output message="tns:releaseResponse"/>
+		</operation>
+	</portType>
+	<binding name="SystemManagementBinding" type="tns:SystemManagementPort">
+		<soapbind:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="submitRequest">
+			<soapbind:operation soapAction="http://xml.avaya.com/ws/SystemManagementService/2008/07/01#soap_webservice#submitRequest"/>
+			<input>
+				<soapbind:header message="tns:SessionID" part="sessionID" use="literal"/>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:header message="tns:SessionID" part="sessionID" use="literal"/>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="release">
+			<soapbind:operation soapAction="http://xml.avaya.com/ws/SystemManagementService/2008/07/01#soap_webservice#release"/>
+			<input>
+				<soapbind:header message="tns:SessionID" part="sessionID" use="literal"/>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:header message="tns:SessionID" part="sessionID" use="literal"/>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="SystemManagementService">
+		<documentation/>
+		<port name="SystemManagementPort" binding="tns:SystemManagementBinding">
+			<soapbind:address location="http://10.96.231.77/smsxml/SystemManagementService.php"/>
+		</port>
+	</service>
+</definitions>

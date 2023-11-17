@@ -1,0 +1,79 @@
+2023-06-09 13:03:50,447 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-06-09 13:03:50,447 | INFO | Autenticando usuário 551121065010 com o dominio @homoad.corp no servidor ldap://192.168.109.94
+2023-06-09 13:03:50,557 | ERROR | USUÁRIO NÃO AUTENTICADO!
+2023-06-09 13:03:50,558 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 12:54:36,078 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-07-20 12:54:36,083 | INFO | Autenticando usuário 551121065010 com o dominio @homoad.corp no servidor ldap://192.168.109.94
+2023-07-20 12:56:46,630 | ERROR | SERVIDOR CAIU!
+2023-07-20 12:56:46,630 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 12:57:01,360 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-07-20 12:57:01,360 | INFO | Autenticando usuário 551121065010 com o dominio @homoad.corp no servidor ldap://192.168.109.94
+2023-07-20 12:57:01,671 | ERROR | USUÁRIO NÃO AUTENTICADO!
+2023-07-20 12:57:01,671 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 16:03:41,800 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-07-20 16:03:41,802 | INFO | Autenticando usuário 551121065555 com o dominio @homoad.corp no servidor ldap://192.168.109.94
+2023-07-20 16:03:41,927 | ERROR | USUÁRIO NÃO AUTENTICADO!
+2023-07-20 16:03:41,927 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 16:06:22,610 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-07-20 16:06:22,610 | INFO | Autenticando usuário 551121065555 com o dominio @homoadonp.corp no servidor ldap://192.168.109.94
+2023-07-20 16:06:22,736 | ERROR | USUÁRIO NÃO AUTENTICADO!
+2023-07-20 16:06:22,736 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 16:08:58,121 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-07-20 16:08:58,121 | INFO | Autenticando usuário 551121065555 com o dominio @homadonp.corp no servidor ldap://192.168.109.94
+2023-07-20 16:08:58,312 | INFO | USUÀRIO AUTENTICADO!
+2023-07-20 16:08:58,312 | INFO | Propriedades resgatas dos usuário -> [('CN=Gerente User,OU=Avaya,DC=homadonp,DC=corp', {'objectClass': [b'top', b'person', b'organizationalPerson', b'user'], 'cn': [b'Gerente User'], 'sn': [b'User'], 'title': [b'Gerente'], 'givenName': [b'Gerente'], 'distinguishedName': [b'CN=Gerente User,OU=Avaya,DC=homadonp,DC=corp'], 'instanceType': [b'4'], 'whenCreated': [b'20230720155537.0Z'], 'whenChanged': [b'20230720160843.0Z'], 'displayName': [b'Gerente User'], 'uSNCreated': [b'111792'], 'uSNChanged': [b'111804'], 'company': [b'GOOGLE'], 'name': [b'Gerente User'], 'objectGUID': [b'\xdfO\xd8\xec\xd8\xc3\xa3E\xad@~;\x14\xa3~\xae'], 'userAccountControl': [b'512'], 'badPwdCount': [b'0'], 'codePage': [b'0'], 'countryCode': [b'0'], 'badPasswordTime': [b'0'], 'lastLogoff': [b'0'], 'lastLogon': [b'0'], 'pwdLastSet': [b'133343421376773393'], 'primaryGroupID': [b'513'], 'objectSid': [b'\x01\x05\x00\x00\x00\x00\x00\x05\x15\x00\x00\x00\xb4l\x1dL\xa34\xa0\xecA4:1R\x06\x00\x00'], 'accountExpires': [b'9223372036854775807'], 'logonCount': [b'0'], 'sAMAccountName': [b'551121065555'], 'sAMAccountType': [b'805306368'], 'userPrincipalName': [b'551121065555@homadonp.corp'], 'objectCategory': [b'CN=Person,CN=Schema,CN=Configuration,DC=homadonp,DC=corp'], 'dSCorePropagationData': [b'16010101000000.0Z'], 'lastLogonTimestamp': [b'133343429238893391']})]
+2023-07-20 16:08:58,312 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 16:08:58,312 | INFO | USUÁRIO 551121065555 AUTENTICADO!
+2023-07-20 16:08:59,636 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-07-20 16:08:59,636 | INFO | Usuário a ser filtrado -> 551121065555
+2023-07-20 16:09:21,848 | INFO | **** FUNÇÃO DE LISTAGEM DE USUÁRIOS POR EMPRESA ****
+2023-07-20 16:09:21,848 | INFO | A compania a ser filtrada é -> GOOGLE
+2023-07-20 16:09:21,848 | DEBUG | Realizando busca...
+2023-07-20 16:10:27,560 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-07-20 16:10:27,560 | INFO | Autenticando usuário 551121065555 com o dominio @homadonp.corp no servidor ldap://192.168.109.94
+2023-07-20 16:10:27,750 | INFO | USUÀRIO AUTENTICADO!
+2023-07-20 16:10:27,750 | INFO | Propriedades resgatas dos usuário -> [('CN=Gerente User,OU=Avaya,DC=homadonp,DC=corp', {'objectClass': [b'top', b'person', b'organizationalPerson', b'user'], 'cn': [b'Gerente User'], 'sn': [b'User'], 'title': [b'Gerente'], 'givenName': [b'Gerente'], 'distinguishedName': [b'CN=Gerente User,OU=Avaya,DC=homadonp,DC=corp'], 'instanceType': [b'4'], 'whenCreated': [b'20230720155537.0Z'], 'whenChanged': [b'20230720160843.0Z'], 'displayName': [b'Gerente User'], 'uSNCreated': [b'111792'], 'memberOf': [b'CN=Administrators,CN=Builtin,DC=homadonp,DC=corp'], 'uSNChanged': [b'111804'], 'company': [b'GOOGLE'], 'name': [b'Gerente User'], 'objectGUID': [b'\xdfO\xd8\xec\xd8\xc3\xa3E\xad@~;\x14\xa3~\xae'], 'userAccountControl': [b'512'], 'badPwdCount': [b'0'], 'codePage': [b'0'], 'countryCode': [b'0'], 'badPasswordTime': [b'0'], 'lastLogoff': [b'0'], 'lastLogon': [b'0'], 'pwdLastSet': [b'133343421376773393'], 'primaryGroupID': [b'513'], 'objectSid': [b'\x01\x05\x00\x00\x00\x00\x00\x05\x15\x00\x00\x00\xb4l\x1dL\xa34\xa0\xecA4:1R\x06\x00\x00'], 'accountExpires': [b'9223372036854775807'], 'logonCount': [b'0'], 'sAMAccountName': [b'551121065555'], 'sAMAccountType': [b'805306368'], 'userPrincipalName': [b'551121065555@homadonp.corp'], 'objectCategory': [b'CN=Person,CN=Schema,CN=Configuration,DC=homadonp,DC=corp'], 'dSCorePropagationData': [b'16010101000000.0Z'], 'lastLogonTimestamp': [b'133343429238893391']})]
+2023-07-20 16:10:27,750 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-07-20 16:10:27,750 | INFO | USUÁRIO 551121065555 AUTENTICADO!
+2023-07-20 16:10:42,908 | INFO | **** FUNÇÃO DE LISTAGEM DE USUÁRIOS POR EMPRESA ****
+2023-07-20 16:10:42,908 | INFO | A compania a ser filtrada é -> GOOGLE
+2023-07-20 16:10:42,908 | DEBUG | Realizando busca...
+2023-07-20 16:10:48,317 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-07-20 16:10:48,317 | INFO | Usuário a ser filtrado -> 551121065555
+2023-07-20 16:10:52,992 | INFO | **** FUNÇÃO DE LISTAGEM DE USUÁRIOS POR EMPRESA ****
+2023-07-20 16:10:52,992 | INFO | A compania a ser filtrada é -> GOOGLE
+2023-07-20 16:10:52,992 | DEBUG | Realizando busca...
+2023-07-20 16:16:19,000 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-07-20 16:16:19,000 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:40:23,291 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-08-08 18:40:23,292 | INFO | Autenticando usuário 551121065555 com o dominio @homadonp.corp no servidor ldap://192.168.109.94
+2023-08-08 18:40:23,520 | INFO | USUÀRIO AUTENTICADO!
+2023-08-08 18:40:23,520 | INFO | Propriedades resgatas dos usuário -> [('CN=Gerente User,OU=Avaya,DC=homadonp,DC=corp', {'objectClass': [b'top', b'person', b'organizationalPerson', b'user'], 'cn': [b'Gerente User'], 'sn': [b'User'], 'title': [b'Gerente'], 'givenName': [b'Gerente'], 'distinguishedName': [b'CN=Gerente User,OU=Avaya,DC=homadonp,DC=corp'], 'instanceType': [b'4'], 'whenCreated': [b'20230720155537.0Z'], 'whenChanged': [b'20230808183938.0Z'], 'displayName': [b'Gerente User'], 'uSNCreated': [b'111792'], 'memberOf': [b'CN=Administrators,CN=Builtin,DC=homadonp,DC=corp'], 'uSNChanged': [b'114253'], 'company': [b'GOOGLE'], 'name': [b'Gerente User'], 'objectGUID': [b'\xdfO\xd8\xec\xd8\xc3\xa3E\xad@~;\x14\xa3~\xae'], 'userAccountControl': [b'512'], 'badPwdCount': [b'0'], 'codePage': [b'0'], 'countryCode': [b'0'], 'badPasswordTime': [b'0'], 'lastLogoff': [b'0'], 'lastLogon': [b'0'], 'pwdLastSet': [b'133343421376773393'], 'primaryGroupID': [b'513'], 'objectSid': [b'\x01\x05\x00\x00\x00\x00\x00\x05\x15\x00\x00\x00\xb4l\x1dL\xa34\xa0\xecA4:1R\x06\x00\x00'], 'adminCount': [b'1'], 'accountExpires': [b'9223372036854775807'], 'logonCount': [b'0'], 'sAMAccountName': [b'551121065555'], 'sAMAccountType': [b'805306368'], 'userPrincipalName': [b'551121065555@homadonp.corp'], 'objectCategory': [b'CN=Person,CN=Schema,CN=Configuration,DC=homadonp,DC=corp'], 'dSCorePropagationData': [b'20230720170852.0Z', b'16010101000000.0Z'], 'lastLogonTimestamp': [b'133359935781484989']})]
+2023-08-08 18:40:23,521 | INFO | Fechando conexão com o servidor ldap://192.168.109.94
+2023-08-08 18:40:23,521 | INFO | USUÁRIO 551121065555 AUTENTICADO!
+2023-08-08 18:40:24,401 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:40:24,402 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:41:12,893 | INFO | **** FUNÇÃO DE LISTAGEM DE USUÁRIOS POR EMPRESA ****
+2023-08-08 18:41:12,893 | INFO | A compania a ser filtrada é -> GOOGLE
+2023-08-08 18:41:12,893 | DEBUG | Realizando busca...
+2023-08-08 18:41:31,359 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:41:31,365 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:47:45,573 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:47:45,575 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:47:47,254 | INFO | **** FUNÇÃO DE LISTAGEM DE USUÁRIOS POR EMPRESA ****
+2023-08-08 18:47:47,254 | INFO | A compania a ser filtrada é -> GOOGLE
+2023-08-08 18:47:47,254 | DEBUG | Realizando busca...
+2023-08-08 18:54:26,498 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:54:26,500 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:54:41,483 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:54:41,483 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:54:51,068 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:54:51,068 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:55:10,304 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:55:10,305 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 18:55:12,741 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 18:55:12,741 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 19:46:03,754 | INFO | **** FUNÇÃO DE BUSCA DE PROPRIEDADES DO USUÁRIO ****
+2023-08-08 19:46:03,755 | INFO | Usuário a ser filtrado -> 551121065555
+2023-08-08 19:49:22,100 | INFO | **** FUNÇÃO DE AUTENTICAÇÃO DO USUÁRIO ****
+2023-08-08 19:49:22,100 | INFO | Autenticando usuário 551121065555 com o dominio @homadonp.corp no servidor ldap://192.168.109.94
